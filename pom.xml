@@ -1,10 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.makao</groupId>
+  <parent>
+		<groupId>com.makao</groupId>
+		<artifactId>mall-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../mall-parent</relativePath>
+  </parent>
   <artifactId>mall-web</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
   <name>mall-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
@@ -217,7 +221,7 @@
 		<!-- dubbo -->
   </dependencies>
   <build>
-    <finalName>/</finalName>
+    <finalName>mall-web</finalName>
     	<resources>
             <resource>
                 <!--directory: 资源所在的位置-->
